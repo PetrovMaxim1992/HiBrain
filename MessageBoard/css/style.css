@@ -3,6 +3,9 @@
     max-width: 100%;
     margin: 0 auto;
 }
+body, html {
+    height: 100%;
+}
 
 a {
     color: inherit;
@@ -13,6 +16,8 @@ a {
 
 button {
     cursor: pointer;
+    border: none;
+    background-color: transparent;
 }
 
 ul, ul li {
@@ -75,10 +80,8 @@ svg {
     font-family: Roboto-Regular, sans-serif;
     font-size: 14px;
     font-weight: 400;
-
-
 }
-
+/****************************main********************************/
 .main {
     background: #2A2F370A;
     display: flex;
@@ -94,7 +97,7 @@ svg {
     width: 1170px;
     margin: 0;
 }
-
+/****************************aside********************************/
 .aside {
     background:  #FFFFFF;
     margin: 40px 0 160px 0;
@@ -211,9 +214,118 @@ svg {
     margin: 0 0 0 24px;
     color: #2A2F37;
 }
+/****************************main-section********************************/
+.board-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
+}
+.counter {
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.add {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    background-color: #1E3DAF;
+    width: 133px;
+    height: 40px;
+    font-family: Roboto-Medium, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.add-span {
+    margin: 0;
+}
+
+
+
+
+
+/****************************footer********************************/
 .footer {
-    height: 100%;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    height: 208px;
     background: #2A2F37;
 }
+
+.footer-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 32px;
+    /*margin-top: 48px;*/
+    width: 1170px;
+}
+
+.footer-logo-div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+    margin: 0;
+}
+
+.footer-logo {
+    margin: 0;
+}
+
+.footer-logo-span-div {
+    display: flex;
+    align-items: center;
+    width: 247px;
+    height: 32px;
+    margin: 0;
+    border-left:  1px solid rgba(255, 255, 255, 50%);
+    padding-left: 40px;
+}
+
+.footer-logo-span {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #FFFFFF;
+    opacity: 60%;
+}
+
+.feedback-logo {
+    margin: 0;
+}
+
+.footer-footer {
+    margin: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 40px;
+    width: 1170px;
+    border-top: 1px solid rgba(255, 255, 255, 12%) ;
+    font-family: Roboto-Regular, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 60%);
+}
+
+.footer-copyright {
+    margin-left: 0;
+
+
+}
+
+.feedback-tel {
+    margin-right: 0;
+}
+
+
