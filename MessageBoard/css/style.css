@@ -1,6 +1,6 @@
 /****************************Global********************************/
 * {
-    max-width: 1142px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -8,6 +8,10 @@ a {
     color: inherit;
     text-decoration: none;
     background-color: transparent;
+    cursor: pointer;
+}
+
+button {
     cursor: pointer;
 }
 
@@ -21,23 +25,44 @@ h1 h2 h3 {
     margin: 0;
 }
 
+span {
+    margin: 0 auto;
+}
+
 /****************************header********************************/
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo {
+    margin: 0;
+}
+
 .logo-div {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: #FFFFFF;
-    width: 1920px;
+    width: 1170px;
     height: 72px;
 }
+
 .user-login {
+    margin: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .user-login-link {
     margin-right: 8px;
+    opacity: 40%;
+
+}
+.header-search {
+    opacity: 40%;
 }
 
 .user-login-link-text {
@@ -46,31 +71,125 @@ h1 h2 h3 {
     font-family: Roboto-Regular, sans-serif;
     font-size: 14px;
     font-weight: 400;
+
+
 }
 
 .main {
+    background: #2A2F370A 4%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    width: 100%;
+}
+.message-board {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1170px;
+    margin: 0;
 }
 
 .aside {
+    background:  #FFFFFF;
+    margin: 40px 0 0 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
     width: 263px;
+    height: 920px;
 }
+
+.aside-header {
+    margin: 0;
+    width: 263px;
+    padding-bottom:  24px;
+    border-bottom:  1px solid;
+    border-bottom-color: #2A2F371A;
+}
+
 .user-logo {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    margin: 24px 0 0 24px;
 }
 
-.user-name-div {
+.user-first-char-div {
+    margin: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 40px;
+    height: 40px;
+    background:  #2A2F3714 8%;
+}
+
+.user-first-char{
+    font-family: RobotoSlab-Bold,sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #2A2F37;
+    opacity: 40%;
+}
+
+.user-name-div {
+    background:  #FFFFFF;
+    display: flex;
+    justify-content: center;
     flex-direction: column;
+    margin-left: 16px;
+}
+
+.user-name {
+    font-family: "Roboto-Bold", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+    height: 24px;
+}
+
+.user-account {
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0;
+    height: 16px;
+    color: #2A2F37;
+    opacity: 60%;
+}
+
+.aside-body {
+    margin: 0;
+    height: 760px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.aside-adv-button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 26px 0 0 0;
+    border: none;
+    background: #FFFFFF;
+    border-left: 2px solid #1E3DAF;
+    padding-left: 24px;
+    width: 263px;
+}
+
+.aside-adv-button:active {
+    background: #2A2F370A 4%;
+}
+
+.aside-adv-button-span {
+    color: #1E3DAF;
+    font-family: Roboto-Regular, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 12px;
 }
